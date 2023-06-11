@@ -7,8 +7,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Base from './components/userComp/Base';
 import HomeUser from './components/userComp/HomeUser';
 import Footer from './components/Footer';
-import AddDeases from './components/userComp/AddDisease';
 import AddDisease from './components/userComp/AddDisease';
+
+
 
 export default function App() {
   const [name, setName] = useState(JSON.parse(localStorage.getItem('userLoged')));
@@ -29,7 +30,7 @@ export default function App() {
           <Route path="/register" element={<RegistrationComponent />} />
           <Route path="/user" element={<Base />}>
             <Route path="home" element={<HomeUser />} />
-            <Route path="adddisease" element={<AddDisease />} />
+            <Route path="adddisease" element={<AddDisease/>} />
           </Route>
         </Routes>
          <Footer/> 

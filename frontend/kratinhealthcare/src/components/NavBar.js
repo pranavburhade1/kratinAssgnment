@@ -18,7 +18,7 @@ export default function NavBar({ name, setName }) {
           <a href='/'>
             <img src='./kratin.png' alt='Bootstrap' width='80' height='24' />
           </a>
-        { IsLogInUSer() && <a href='/user/addDeases' > Add Disease</a>}
+        { IsLogInUSer() && <a href='/user/adddisease' > Add Disease</a>}
         </div>
         <div className='col-lg-3 col-md-6 col-sm-12'>
           <div>

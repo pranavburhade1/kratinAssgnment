@@ -7,5 +7,18 @@ const adduser = (user)=> {
     return axiosServ.post('user/add', user);
  }
 
+ const adddisease = (disease,userId)=> {
+   console.log(userId)
+   return axiosServ.post(`user/addDisease/${userId}`, disease);
+ }
 
-export default {login,adduser}
+ const getAllDisease = (userId)=> {
+  return axiosServ.get('user/getDisease',{
+      params: {
+         userId : userId
+      }
+   })
+ }
+
+
+export default {login,adduser, adddisease,getAllDisease}
